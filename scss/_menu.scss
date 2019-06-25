@@ -69,7 +69,7 @@
   }
 
   &-branding {
-    width: 66%;
+    width: 67%;
     background: $primary-color;
     transform: translate3d(0, 100%, 0);
     @include easeOut;
@@ -103,7 +103,7 @@
   .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 30px;
+    font-size: 2rem;
     text-transform: uppercase;
     padding: 1rem 0;
     @include easeOut;
