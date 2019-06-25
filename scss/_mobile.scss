@@ -6,12 +6,12 @@
 
 @include mediaMd {
   main {
-    align-items: center;
-    text-align: center;
+    align-items: left;
+    text-align: left;
 
     .lg-heading {
       line-height: 1;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
     }
   }
 

@@ -94,11 +94,11 @@
 
 @media screen and (max-width: 768px) {
   main {
-    align-items: center;
-    text-align: center; }
+    align-items: left;
+    text-align: left; }
     main .lg-heading {
       line-height: 1;
-      margin-bottom: 1rem; }
+      margin-bottom: 2rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -160,7 +160,8 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(44, 44, 44, 0.5); }
+    background: rgba(44, 44, 44, 0.5);
+    border-radius: 7px; }
 
 a {
   color: aquamarine;
@@ -178,7 +179,8 @@ main {
   padding: 4rem;
   height: 100%; }
   main .icons {
-    margin-top: 1rem; }
+    margin-top: 0rem;
+    float: left; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
