@@ -9,7 +9,7 @@
 body {
   @include background;
   background: $primary-color;
-  color: pink;
+  color: $fourth-color;
   height: 100%;
   margin: 0;
   font-family: "Conv_Brandon_bld", sans-serif;
@@ -28,15 +28,16 @@ h3 {
   }
 
   &.sm-heading {
+    color: lighten($fourth-color, 9);
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
+    background: rgba(lighten($primary-color, 2), 0.2);
     border-radius: 7px;
   }
 }
 
 a {
-  color: aquamarine;
+  color: $third-color;
   text-decoration: none;
 }
 

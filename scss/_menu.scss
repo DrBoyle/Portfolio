@@ -10,7 +10,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: white;
+    background: lighten($fourth-color, 9);
     @include easeOut;
   }
 
@@ -35,7 +35,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.95;
   visibility: hidden;
 
   &.show {
@@ -58,24 +58,28 @@
     margin: 0;
     padding: 0;
     width: 33%;
-    background: darken($primary-color, 3);
+    background: lighten($fifth-color, 45);
     list-style: none;
+
     transform: translate3d(0, -100%, 0);
     @include easeOut;
 
     &.show {
       transform: translate3d(0, 0, 0);
+      background: lighten($fifth-color, 4);
     }
   }
 
   &-branding {
     width: 67%;
-    background: $primary-color;
+    background: lighten($third-color, 10);
+
     transform: translate3d(0, 100%, 0);
     @include easeOut;
 
     &.show {
       transform: translate3d(0, 0, 0);
+      background: darken($third-color, 10);
     }
 
     .portrait {
@@ -83,7 +87,7 @@
       height: 250px;
       background: url(../src/portrait.jpg);
       border-radius: 50%;
-      border: solid 3px $secondary-color;
+      //border: solid 3px $secondary-color;
     }
   }
 
@@ -103,8 +107,8 @@
   .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 2rem;
-    text-transform: uppercase;
+    font-size: 2.5rem;
+    //text-transform: uppercase;
     padding: 1rem 0;
     @include easeOut;
 
