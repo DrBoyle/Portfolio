@@ -1,6 +1,5 @@
 @import "config";
 @import "menu";
-@import "mobile";
 
 * {
   box-sizing: border-box;
@@ -9,7 +8,7 @@
 body {
   @include background;
   background: $primary-color;
-  color: $fourth-color;
+  color: lighten($fourth-color, 9);
   height: 100%;
   margin: 0;
   font-family: "Conv_Brandon_bld", sans-serif;
@@ -24,6 +23,7 @@ h3 {
   margin: 0;
 
   &.lg-heading {
+    color: $fourth-color;
     font-size: 6rem;
   }
 
@@ -53,7 +53,8 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%;
+  //height: 100%;
+  min-height: calc(100vh - 50px);
 
   .icons {
     margin-top: 0rem;
@@ -77,3 +78,54 @@ main {
     }
   }
 }
+
+.about-info {
+  display: grid;
+  grid-gap: 1.3rem;
+  grid-template-areas:
+    "bioimage bio bio"
+    "job1 job2 job3";
+  grid-template-columns: 1fr 1fr 1fr;
+
+  .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: $secondary-color 3px solid;
+  }
+
+  .bio {
+    grid-area: bio;
+    font-size: 1.5rem;
+  }
+
+  .job1 {
+    grid-area: job1;
+  }
+
+  .job2 {
+    grid-area: job2;
+  }
+
+  .job3 {
+    grid-area: job3;
+  }
+
+  .job {
+    background: rgba(lighten($primary-color, 2), 0.2);
+    border-radius: 7px;
+    padding: 0.9rem;
+    border-bottom: rgba($secondary-color, 0.5) 0.5px solid;
+    border-right: rgba($secondary-color, 0.5) 0.5px solid;
+  }
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(darken($primary-color, 3), 0.5);
+  color: lighten($third-color, 9);
+  height: 50px;
+}
+
+@import "mobile";

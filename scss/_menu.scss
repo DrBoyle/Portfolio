@@ -58,7 +58,8 @@
     margin: 0;
     padding: 0;
     width: 33%;
-    background: lighten($fifth-color, 45);
+    //background: lighten($fifth-color, 45);
+    background: rgba($primary-color, 0.9);
     list-style: none;
 
     transform: translate3d(0, -100%, 0);
@@ -66,20 +67,20 @@
 
     &.show {
       transform: translate3d(0, 0, 0);
-      background: lighten($fifth-color, 4);
+      //background: darken($fifth-color, 4);
     }
   }
 
   &-branding {
     width: 67%;
-    background: lighten($third-color, 10);
+    background: rgba(lighten($secondary-color, 10), 0.9);
+    opacity: 0;
 
     transform: translate3d(0, 100%, 0);
     @include easeOut;
 
     &.show {
       transform: translate3d(0, 0, 0);
-      background: darken($third-color, 10);
     }
 
     .portrait {

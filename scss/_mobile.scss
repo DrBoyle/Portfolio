@@ -27,13 +27,13 @@
   }
 
   .menu-nav {
-    height: 67vh;
-    transform: translate3d(-100%, 0, 0);
+    height: 100vh;
+    transform: translate3d(0, -100%, 0);
     font-size: 0.5rem;
   }
 
   .menu-branding {
-    height: 33vh;
+    height: 0vh;
     transform: translate3d(100%, 0, 0);
 
     .portrait {
@@ -41,6 +41,16 @@
       width: 150px;
       height: 150px;
     }
+  }
+
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+    grid-template-columns: 1fr;
   }
 }
 
