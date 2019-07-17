@@ -2,6 +2,15 @@
 }
 
 @include mediaLg {
+  main {
+    align-items: left;
+    text-align: left;
+
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 2rem;
+    }
+  }
 }
 
 @include mediaMd {
@@ -60,6 +69,55 @@
   }
 
   h1.lg-heading {
-    font-size: 3rem;
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  h2.sm-heading {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+  }
+
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu-nav {
+    height: 100vh;
+    transform: translate3d(0, -100%, 0);
+    font-size: 0.5rem;
+  }
+
+  .menu-branding {
+    height: 0vh;
+    transform: translate3d(100%, 0, 0);
+
+    .portrait {
+      background: url(../src/portrait_small.jpg);
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+    grid-template-columns: 1fr;
+  }
+
+  .bio-image {
+    width: 66vw;
+    height: 66vw;
   }
 }
